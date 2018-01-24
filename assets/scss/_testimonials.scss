@@ -21,7 +21,7 @@
     left: -4px;
     width: 4px;
     height: 32px;
-    background: $red;
+    background: $blue;
 }
 
 .testimonial-card::after {
@@ -31,7 +31,7 @@
     left: -3px;
     width: 32px;
     height: 4px;
-    background: $red;
+    background: $blue;
 }
 
 .testimonial-card .testimonial-quote-wrapper {
@@ -51,7 +51,7 @@
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    color: $gray-lighter;
+    color: $blue;
     font-size: 30px;
     position: absolute;
     top: 35px;

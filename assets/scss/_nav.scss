@@ -213,11 +213,11 @@
 
 
 .main-menu .navigation>li.current>a {
-    color: $red;
+    color: $blue;
     opacity: 1;
 }
 .main-menu .navigation>li:hover>a {
-    color: lighten($red,7%);
+    color: lighten($blue,7%);
     opacity: 1;
 }
 
@@ -482,7 +482,7 @@
 
 .add-to-cart-subtotal-price p {
     font-size: 16px;
-    color: $red
+    color: $blue
 }
 
 .add-to-cart-content>p {

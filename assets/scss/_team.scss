@@ -35,7 +35,7 @@
     width: 45px;
     height: 45px;
     opacity: 1;
-    color: $red;
+    color: $blue;
     border: 1px solid #cacaca;
     line-height: 40px;
     @include border-radius(0px);
@@ -47,7 +47,7 @@
 
 .team-member-card .social-team-member:focus {
     background-color: transparent;
-    color: $red;
+    color: $blue;
 }
 
 .team-member-card {
@@ -69,8 +69,8 @@
 }
 
 .team-member-card ul.social-share li a:hover {
-    background-color: $red;
-    border-color: $red;
+    background-color: $blue;
+    border-color: $blue;
     color: $white;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .team-member-card .card-block .services {
-    border-bottom: 7px solid $red;
+    border-bottom: 7px solid $blue;
     text-align: center;
     background-color: $gray-lightest;
 }
@@ -125,7 +125,7 @@
     opacity: 0.8;
     left: 18px;
     top: 45%;
-    background-color: lighten($red,10%);
+    background-color: lighten($blue,10%);
     -webkit-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
     -ms-transition: all 300ms linear 0ms;
@@ -134,13 +134,13 @@
 
 .feature-team .slick-prev:focus:hover,
 .feature-team .slick-prev:hover {
-    background-color: $red;
+    background-color: $blue;
     opacity: 1;
 }
 
 .feature-team .slick-next:focus:hover,
 .feature-team .slick-next:hover {
-    background-color: $red;
+    background-color: $blue;
     opacity: 1;
 }
 
@@ -150,7 +150,7 @@
     opacity: 0.8;
     right: 19px;
     top: 45%;
-    background-color: lighten($red,10%);
+    background-color: lighten($blue,10%);
     -webkit-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
     -ms-transition: all 300ms linear 0ms;
@@ -295,7 +295,7 @@ figure.effect-team p a i::before {
 }
 
 figure.effect-team p a i:hover::before {
-    background: $red;
+    background: $blue;
     color: #ffffff;
 }
 
@@ -419,8 +419,8 @@ p.team-member-text {
 }
 
 .team-single-social ul.social-share li a:hover {
-    background-color: $red;
-    border-color: $red;
+    background-color: $blue;
+    border-color: $blue;
     color: $white;
 }
 
@@ -437,7 +437,7 @@ p.team-member-text {
     opacity: 0.8;
     left: 18px;
     top: 45%;
-    background-color: lighten($red,10%);
+    background-color: lighten($blue,10%);
     -webkit-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
     -ms-transition: all 300ms linear 0ms;
@@ -446,13 +446,13 @@ p.team-member-text {
 
 .team-section .slick-prev:focus:hover,
 .team-section .slick-prev:hover {
-    background-color: $red;
+    background-color: $blue;
     opacity: 1;
 }
 
 .team-section .slick-next:focus:hover,
 .team-section .slick-next:hover {
-    background-color: $red;
+    background-color: $blue;
     opacity: 1;
 }
 
@@ -462,7 +462,7 @@ p.team-member-text {
     opacity: 0.8;
     right: 19px;
     top: 45%;
-    background-color: lighten($red,10%);
+    background-color: lighten($blue,10%);
     -webkit-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
     -ms-transition: all 300ms linear 0ms;
@@ -524,7 +524,7 @@ p.team-member-text {
     left: -4px;
     width: 4px;
     height: 35px;
-    background: $red;
+    background: $blue;
 }
 
 .team-member-info .widget:after {
@@ -534,5 +534,5 @@ p.team-member-text {
     left: 0;
     width: 35px;
     height: 4px;
-    background: $red;
+    background: $blue;
 }

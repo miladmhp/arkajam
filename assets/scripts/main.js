@@ -8,7 +8,10 @@
 
 
 $(document).ready(function() {
-  
+
+    var videoBox = $("iframe");
+    $(videoBox).height($(videoBox).width()*9/16);
+    
     initLightbox();
     initAnimation();
     initStickyNav();
