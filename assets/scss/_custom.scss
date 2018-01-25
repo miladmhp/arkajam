@@ -24,3 +24,60 @@
 video {
     width: 100% !important;
 }
+
+dd {
+    margin-left: 30px !important;
+}
+
+dd dl dt a {
+    color: $gray;
+}
+
+dd dl dt a:before {
+    content: '-';
+    margin-right: 4px;
+}
+
+dd dl dd a:before {
+    content: '-';
+    margin-right: 4px;
+}
+
+.mines-top {
+    @media(max-width: 767px) {
+        top:-70px;
+        position: relative;
+    }
+}
+
+
+dl.sitemap {
+    @media(max-width: 767px) {
+        column-count: 1;
+    }
+
+    @media(min-width: 768px) and (max-width: 1200px) {
+        column-gap: 35px;
+        column-count: 2;
+    }
+
+    @media(min-width: 1201px) {
+        column-gap: 50px;
+        column-count: 3;
+    }
+}
+
+.intro-table {
+    @media(min-width: 992px) {
+        height:100%;
+    }
+}
+
+
+.text-image-component:nth-child(odd){
+    .text-container-inside {
+        @media(max-width: 767px){
+            margin-top: 3rem;
+        }
+    }
+}

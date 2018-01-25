@@ -11,6 +11,35 @@ $(document).ready(function() {
 
     var videoBox = $("iframe");
     $(videoBox).height($(videoBox).width()*9/16);
+
+        // Cache the highest
+        var highestBox = 0;
+
+        // Select and loop the elements you want to equalise
+        $('.intro-table .intro-text').each(function(){
+
+            // If this box is higher than the cached highest then store it
+            if($(this).height() > highestBox) {
+                highestBox = $(this).height();
+            }
+
+        });
+
+        // Set the height of all those children to whichever was highest
+        $('.intro-table .intro-text').height(highestBox);
+
+        $(window).on('resize', function() {
+
+            if ($('.text-image-container').find('.services-media').length !== 0) {
+                if ($(window).width() <= 767) {
+                    var servicesHeight = $('.services-media').height();
+                    $('.services-media').closest(".text-image-container").height(servicesHeight);
+                }
+
+
+            }
+
+        });
     
     initLightbox();
     initAnimation();
