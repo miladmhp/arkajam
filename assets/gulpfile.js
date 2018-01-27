@@ -23,16 +23,32 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./css'))
 });
 
+gulp.task('slick', function() {
+    return gulp.src([
+        'css/slick/slick.scss',
+        'css/slick/slick-theme.scss'
+    ])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', '> 5%', 'Firefox ESR'],
+            cascade: true
+        }))
+        .pipe(concat('slick.css'))
+        .pipe(cleanCSS())
+        .pipe(rename("slick.min.css"))
+        .pipe(gulp.dest('./css'))
+});
+
 gulp.task('css', function() {
     return gulp.src([
         'css/superslide/superslides.css',
         'css/themes/default/default.css',
-        'scripts/slick/slick.css',
-        'scripts/slick-theme.css',
+        'css/slick.min.css',
         'css/animate/animate.css',
         'css/featherlight/featherlight.css',
         'css/featherlight/featherlight.gallery.css',
         'css/styles.min.css'
+
     ])
         .pipe(concat('all.css'))
         .pipe(cleanCSS())
@@ -49,12 +65,13 @@ gulp.task('js', function() {
         'scripts/featherlight/featherlight.js',
         'scripts/featherlight/featherlight.gallery.js',
         'scripts/sticky/jquery.sticky.js',
-        'scripts/slick/slick.min.js',
+        'scripts/slick/slick.js',
         'scripts/isotope/isotope.pkgd.js',
+        'scripts/googlemaps.js',
+        'scripts/map-helper.js',
         'scripts/superslide/jquery.superslides.js',
         'scripts/wow/wow.min.js',
-        'https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6gbhsnCEt4FS9D6BBl3mZO1xy-NcwpE',
-        'scripts/*.js'
+        'scripts/main.js'
     ])
         .pipe(concat('all.js'))
         .pipe(uglify())
@@ -65,10 +82,9 @@ gulp.task('js', function() {
 
 // Static Server + watching scss/js files
 gulp.task('serve', function() {
-
-    gulp.watch(['./scss/*.scss'], ['sass']);
-    gulp.watch(['./scss/*.scss'], ['css']);
-    gulp.watch(['./scripts/*.js'], ['js']);
+    gulp.watch(['scss/*.scss'], ['sass','css']);
+    gulp.watch(['scripts/*.js'], ['js']);
 });
 
-gulp.task('default', ['js','sass']);
+gulp.task('default', ['js','sass','slick','css']);
+
