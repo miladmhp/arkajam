@@ -78,10 +78,18 @@
     margin-bottom: 1.4rem;
 }
 
-.address-item-wrapper {}
+.address-item-wrapper {
+    display: grid;
+}
 
 .contact-block .address-item {
     margin-bottom: 1.6rem;
+}
+
+.contact-block .address-item:hover {
+    text-decoration: underline !important;
+    color: $white !important;
+
 }
 
 .contact-block .address-item i {

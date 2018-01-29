@@ -221,13 +221,9 @@
 .portfolio-gallery-section .portfolio-grid figure,
 .portfolio-gallery-section .portfolio-grid figure img {
     display: block;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 0, 300px);
-    transform: translate3d(0, 0, 300px);
-    background: $black;
-    -webkit-perspective: 1200px;
-    perspective: 1200px;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    background: $blue;
     cursor: pointer;
 }
 
@@ -243,11 +239,9 @@
 .portfolio-section-area .grid figure img {
     display: block;
     max-width: 100%;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 0, 300px);
-    transform: translate3d(0, 0, 300px);
-    background: $black;
+    background: $blue;
     -webkit-perspective: 1200px;
     perspective: 1200px;
     cursor: pointer;
@@ -273,7 +267,7 @@ figure.portfolio-item img {
 }
 
 figure.portfolio-item:hover img {
-    opacity: 0.3;
+    opacity: 0.5;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
@@ -326,6 +320,7 @@ figure.portfolio-item p a {
     -moz-transition: all 200ms linear 0ms;
     -ms-transition: all 200ms linear 0ms;
     transition: all 200ms linear 0ms;
+    margin-left: 1rem;
 }
 
 figure.portfolio-item p a:hover,

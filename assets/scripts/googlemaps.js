@@ -1,4 +1,5 @@
 
+if ($('#map').length > 0) {
 
 window.google = window.google || {};
 google.maps = google.maps || {};
@@ -146,4 +147,5 @@ NOT_FOUND:_.ha,ZERO_RESULTS:_.na},ElevationService:Re,ElevationStatus:{OK:_.ia,U
 KmlLayerStatus:_.hj,MaxZoomService:Rg,MaxZoomStatus:{OK:_.ia,ERROR:_.ba},SaveWidget:_.ph,StreetViewCoverageLayer:jh,StreetViewPanorama:Nf,StreetViewService:_.kh,StreetViewStatus:{OK:_.ia,UNKNOWN_ERROR:_.ma,ZERO_RESULTS:_.na},StyledMapType:_.oh,TrafficLayer:We,TrafficModel:_.Wi,TransitLayer:Xe,TransitMode:_.Xi,TransitRoutePreference:_.Yi,TravelMode:_.Vi,UnitSystem:_.Ni});_.ge("main",{});var sh=/'/g,th;var Fe=arguments[0];
 window.google.maps.Load(function(a,b){var c=window.google.maps;xh();var d=yh(c);_.Q=new tf(a);_.oj=Math.random()<_.L(_.Q,0,1);_.pj=Math.round(1E15*Math.random()).toString(36);_.Pg=uh();_.gj=vh();_.ij=new _.gd;_.Df=b;for(a=0;a<_.Pd(_.Q,8);++a)_.Uf[_.Nd(_.Q,8,a)]=!0;a=new _.rf(_.Q.data[3]);Ge(_.M(a,0));_.yb(nj,function(a,b){c[a]=b});c.version=_.M(a,1);window.setTimeout(function(){he(["util","stats"],function(a,b){a.f.b();a.j();d&&b.b.b({ev:"api_alreadyloaded",client:_.M(_.Q,6),key:_.xf()})})},5E3);
 Ff=new Ef;(a=_.M(_.Q,11))&&he(_.Ld(_.Q,12),wh(a),!0)});}).call(this,{});
+}
 

@@ -202,11 +202,12 @@ ul.social-share li a:hover {
     height: 100%;
     justify-content: left;
     align-items: baseline;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .breadcrumbs {
     position: relative;
-    left: 20px;
     display: inline-flex;
 }
 

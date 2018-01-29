@@ -12,7 +12,7 @@
 
 .product-share ul.social-share li a:hover  {
     background: $blue;
-    color: #fff;
+    color: #fff !important;
     opacity:1;
 }
 
@@ -80,4 +80,25 @@ dl.sitemap {
             margin-top: 3rem;
         }
     }
+}
+
+#address span:not(:first-of-type) {
+    margin-left: 34px !important;
+}
+
+a:hover, a:focus {
+    color: $brand-primary !important;
+    text-decoration: none !important;
+}
+
+.fix-hover li a:hover, .fix-hover li a:focus, .fix-hover li a:active {
+    color: $white !important;
+}
+
+.call-btn {
+    color: $gray-lighter;
+}
+
+.call-btn:hover, .call-btn:active {
+    color: $white !important;
 }

@@ -5,13 +5,15 @@
 
 .text-image-component .text-container {
     margin-bottom: 0px;
-    background-color: rgba(247, 247, 247, 1);
 }
 
 .text-image-component .text-container-inside {
     display: table;
     height: 100%;
     width: 100%;
+    @media (min-width: 768px) {
+        padding: 2rem 0;
+    }
 }
 
 .text-image-component .text-container-inner {
