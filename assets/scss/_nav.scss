@@ -146,7 +146,9 @@
     margin: 0px;
     font-family: $font-family-title;
     font-weight: 400;
-    overflow: hidden;
+    @media (max-width: 991px) {
+        overflow-x: hidden;
+    }
 }
 
 .main-menu .navigation ul {
